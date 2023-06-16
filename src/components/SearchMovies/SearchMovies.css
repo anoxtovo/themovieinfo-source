@@ -1,0 +1,57 @@
+.form {
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+
+.label {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.input {
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    line-height: 3rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.button {
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(0,0,0,0.75);
+    border-radius: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 250ms;
+}
+
+.button:hover {
+    background-color: rgba(0,0,0,0.85);
+}
+
+/* Mobile */
+
+@media (min-width:786px){
+    .form {
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 1rem;
+        align-items: center;
+    }
+
+    .label {
+        margin-bottom: 0;
+    }
+
+    .input {
+        margin-bottom: 0;
+    }
+}
+
+.movie-card-list {
+    margin: 4rem 0rem 4rem 0rem;
+}
